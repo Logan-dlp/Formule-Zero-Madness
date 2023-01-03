@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     #region Settings
     [SerializeField] float moveSpeed;
     [SerializeField] float rotationSpeed;
+    [SerializeField] float gravityForce = 65;
     [SerializeField] Transform playerOrientation;
 
     Rigidbody rb;
@@ -22,7 +23,6 @@ public class Controller : MonoBehaviour
     void SetRigidbody()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
     }
     void ControllerInput()
     {
@@ -36,7 +36,7 @@ public class Controller : MonoBehaviour
         rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
 
         rotationY += horizontalInput;
-        transform.rotation = Quaternion.Euler(0, rotationY, - horizontalInput * 10 * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(0, rotationY, 0);
     }
     void LimitVelocity()
     {
