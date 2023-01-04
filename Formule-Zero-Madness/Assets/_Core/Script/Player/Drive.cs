@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Drive : MonoBehaviour
 {
+    #region Settings
     [SerializeField] float speed;
     [SerializeField] float turnSpeed;
     [SerializeField] float gravity;
@@ -12,6 +11,12 @@ public class Drive : MonoBehaviour
     [SerializeField] KeyCode brake = KeyCode.S;
 
     Rigidbody rb;
+    #endregion
+    #region Meths
+    void Fall()
+    {
+        rb.AddForce(-transform.up * gravity);
+    }
     void Move()
     {
         if (Input.GetKey(accelerate))
@@ -32,9 +37,13 @@ public class Drive : MonoBehaviour
         _rotation *= Time.deltaTime;
         transform.Rotate(0, _rotation, 0);
     }
-    void Fall()
+    #endregion
+    #region Meths Unity
+    private void FixedUpdate()
     {
-        rb.AddForce(-transform.up * gravity);
+        Move();
+        Turn();
+        Fall();
     }
     private void Start()
     {
@@ -43,10 +52,5 @@ public class Drive : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    private void FixedUpdate()
-    {
-        Move();
-        Turn();
-        Fall();
-    }
+    #endregion
 }
