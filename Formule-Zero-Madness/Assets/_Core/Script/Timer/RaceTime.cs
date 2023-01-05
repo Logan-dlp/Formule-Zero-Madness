@@ -17,10 +17,11 @@ public class RaceTime : MonoBehaviour
             _timeToDisplay = 0;
         }
 
-        float minutes = Mathf.FloorToInt(_timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(_timeToDisplay % 60);
+        float _minutes = Mathf.FloorToInt(_timeToDisplay / 60);
+        float _seconds = Mathf.FloorToInt(_timeToDisplay % 60);
+        float _milliseconds = _timeToDisplay % 1 * 1000;
 
-        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timerText.text = string.Format("{0:00}:{1:00}:{2:000}", _minutes, _seconds, _milliseconds);
     }
     void Timer()
     {

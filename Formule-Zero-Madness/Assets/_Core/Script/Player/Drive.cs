@@ -26,7 +26,6 @@ public class Drive : MonoBehaviour
         {
             Move();
             Turn();
-            Fall();
         }
     }
     void Move()
@@ -41,7 +40,7 @@ public class Drive : MonoBehaviour
         }
         Vector3 _localVelocity = transform.InverseTransformDirection(rb.velocity);
         _localVelocity.x = 0;
-        rb.velocity= transform.TransformDirection(_localVelocity);
+        rb.velocity = transform.TransformDirection(_localVelocity);
     }
     void Turn()
     {
@@ -54,6 +53,7 @@ public class Drive : MonoBehaviour
     private void FixedUpdate()
     {
         InStartWait();
+        Fall();
     }
     private void Start()
     {
