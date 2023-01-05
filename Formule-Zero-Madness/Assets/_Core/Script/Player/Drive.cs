@@ -11,6 +11,7 @@ public class Drive : MonoBehaviour
     [SerializeField] KeyCode brake = KeyCode.S;
 
     [SerializeField, Space] StartTime startTime;
+    [SerializeField] RaceTime raceTime;
 
     Rigidbody rb;
     #endregion
@@ -21,7 +22,7 @@ public class Drive : MonoBehaviour
     }
     void InStartWait()
     {
-        if(startTime.currentTime == 0)
+        if(startTime.currentTime == 0 && raceTime.MaxTime != 0)
         {
             Move();
             Turn();

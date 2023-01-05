@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class StartTime : MonoBehaviour
 {
-    #region Setting
+    #region Settings
     [SerializeField] float StartingTime = 3;
     [SerializeField] Text timeText;
     [SerializeField] GameObject uI;
