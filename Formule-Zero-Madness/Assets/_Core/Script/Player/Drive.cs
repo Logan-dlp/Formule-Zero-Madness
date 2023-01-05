@@ -18,7 +18,8 @@ public class Drive : MonoBehaviour
     #region Meths
     void Fall()
     {
-        rb.AddForce(-transform.up * gravity);
+        Physics.Raycast(transform.position, -transform.up, out RaycastHit _hitInfo );
+        rb.AddForce(-_hitInfo.normal * gravity);
     }
     void InStartWait()
     {
