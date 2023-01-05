@@ -10,12 +10,23 @@ public class Drive : MonoBehaviour
     [SerializeField, Space] KeyCode accelerate = KeyCode.Z;
     [SerializeField] KeyCode brake = KeyCode.S;
 
+    [SerializeField, Space] StartTime startTime;
+
     Rigidbody rb;
     #endregion
     #region Meths
     void Fall()
     {
         rb.AddForce(-transform.up * gravity);
+    }
+    void InStartWait()
+    {
+        if(startTime.currentTime == 0)
+        {
+            Move();
+            Turn();
+            Fall();
+        }
     }
     void Move()
     {
@@ -41,9 +52,7 @@ public class Drive : MonoBehaviour
     #region Meths Unity
     private void FixedUpdate()
     {
-        Move();
-        Turn();
-        Fall();
+        InStartWait();
     }
     private void Start()
     {
