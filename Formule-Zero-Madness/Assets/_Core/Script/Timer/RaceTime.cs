@@ -27,7 +27,7 @@ public class RaceTime : MonoBehaviour
     {
         if(startTime.currentTime == 0)
         {
-            if(MaxTime> 0)
+            if(MaxTime > 0)
             {
                 MaxTime -= Time.deltaTime;
             }else

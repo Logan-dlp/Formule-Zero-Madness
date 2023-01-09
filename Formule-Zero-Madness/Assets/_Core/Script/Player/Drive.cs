@@ -3,7 +3,7 @@ using UnityEngine;
 public class Drive : MonoBehaviour
 {
     #region Settings
-    [SerializeField] float speed;
+    public float Speed;
     [SerializeField] float turnSpeed;
     [SerializeField] float gravity;
 
@@ -13,7 +13,9 @@ public class Drive : MonoBehaviour
     [SerializeField, Space] StartTime startTime;
     [SerializeField] RaceTime raceTime;
 
-    Rigidbody rb;
+    [Space] public float LayerPlayer = 3;
+
+    public Rigidbody rb;
     #endregion
     #region Meths
     void Fall()
@@ -33,11 +35,11 @@ public class Drive : MonoBehaviour
     {
         if (Input.GetKey(accelerate))
         {
-            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * speed);
+            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * Speed);
         }
         else if (Input.GetKey(brake))
         {
-            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * -speed);
+            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * -Speed);
         }
         Vector3 _localVelocity = transform.InverseTransformDirection(rb.velocity);
         _localVelocity.x = 0;
