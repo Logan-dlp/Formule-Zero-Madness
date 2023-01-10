@@ -10,6 +10,7 @@ public class Boost : MonoBehaviour
 
     [SerializeField] GameObject boostEffect;
     [SerializeField] Drive player;
+    [SerializeField] Camera playerCam;
 
     public static float CurrentTime;
     float baseSpeed;
@@ -23,12 +24,14 @@ public class Boost : MonoBehaviour
             player.Speed = baseSpeed;
             isCurrentboost = false;
             boostEffect.SetActive(false);
+            //playerCam.fieldOfView = 60;
         }
         else if (CurrentTime != 0 && isCurrentboost == true)
         {
             player.Speed = forceAdd;
             CurrentTime -= Time.deltaTime;
             boostEffect.SetActive(true);
+            //playerCam.fieldOfView = 80;
         }
     }
     #endregion

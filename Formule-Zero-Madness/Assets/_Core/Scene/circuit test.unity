@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 9966.3955, g: 9548.117, b: 10574.805, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -166,8 +166,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &50577695
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -211,8 +212,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &70307709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -461,7 +463,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 80000
-  field of view: 60.000004
+  field of view: 60
   orthographic: 0
   orthographic size: 50
   m_Depth: 0
@@ -595,8 +597,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &193226805
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -654,8 +657,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &220366581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,8 +675,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &228591421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,8 +693,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &244377872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -733,8 +739,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &266613913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -940,8 +947,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &469864024
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -999,8 +1007,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!4 &535996610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808345254161454034, guid: bad682211fa188841962fcf91ff14573,
@@ -1036,8 +1045,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &623074010
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1129,8 +1139,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &672973333
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1160,8 +1171,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &683613567
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1240,8 +1252,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &719218243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1299,8 +1312,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &752942206
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1415,9 +1429,9 @@ Canvas:
   m_GameObject: {fileID: 760705963}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 128188668}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1483,8 +1497,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &811790505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,8 +1515,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &819504136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3162,8 +3178,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &866865387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3179,8 +3196,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &873588107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,8 +3214,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &882195970
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3227,8 +3246,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &891268312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3258,8 +3278,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &911793912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3275,8 +3296,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &917456153
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3306,8 +3328,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &973623000
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3337,8 +3360,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &981532934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3354,8 +3378,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1037033994
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3385,8 +3410,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1058776741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,8 +3428,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1081567028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3433,8 +3460,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1096624911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3464,8 +3492,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1123203013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3481,8 +3510,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1144302717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,8 +3610,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1163637827
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3611,8 +3642,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1185014896
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3642,8 +3674,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1195726094
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3673,8 +3706,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1197035590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3690,8 +3724,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1209682175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,8 +3742,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1218750068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7185280872058446716, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -3773,8 +3809,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1256116165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3790,8 +3827,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1303391897
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3821,8 +3859,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1310925115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8738283540392306408, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -3887,8 +3926,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1364012265
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3918,8 +3958,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1411651297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,8 +3976,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1473605649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3966,8 +4008,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1479482278
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3997,8 +4040,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1488185261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4076,7 +4120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 133.04994, y: -45.025024}
+  m_AnchoredPosition: {x: 133.04993, y: -45.025024}
   m_SizeDelta: {x: 216.0999, y: 59.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &1488303025
@@ -4108,8 +4152,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1489976467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4125,8 +4170,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1515182743
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4156,8 +4202,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1541392443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4187,8 +4234,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1543412809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4204,8 +4252,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1554747880
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4235,8 +4284,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1555278525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4252,8 +4302,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1559348061
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4283,8 +4334,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1580500742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3955072524194071286, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -4363,8 +4415,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1583112045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4394,8 +4447,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1607510915
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4425,8 +4479,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1636974626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,7 +4517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -252.77, y: -34.688873}
+  m_AnchoredPosition: {x: -252.77002, y: -34.688873}
   m_SizeDelta: {x: 461.5769, y: 298.6685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636974628
@@ -4478,7 +4533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4598,8 +4653,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1706628254
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4629,8 +4685,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1730774160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4646,8 +4703,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1766862778
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4677,8 +4735,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1770055814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,8 +4753,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1786094748
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4725,8 +4785,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1790111345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4742,8 +4803,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1792271051
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4773,8 +4835,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1820305886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4790,8 +4853,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1854359952
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4821,8 +4885,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1874872932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4852,8 +4917,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &1877254817
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4883,8 +4949,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1894954543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4900,8 +4967,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1895828686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4917,8 +4985,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1903637367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4934,8 +5003,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1904403900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5014,8 +5084,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1 &1933769802
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,7 +5138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.94509804, g: 0.76862746, b: 0.05882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5111,8 +5182,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &1995252739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5128,8 +5200,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!1001 &2005453031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5652,7 +5725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5726,8 +5799,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &2071549367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5743,8 +5817,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &2079584987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5760,8 +5835,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &2080628684
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5791,8 +5867,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!114 &2083882490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5808,8 +5885,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!64 &2096159083
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5839,8 +5917,9 @@ MonoBehaviour:
   forceAdd: 700
   timer: 2
   isCurrentboost: 0
-  boostEffect: {fileID: 0}
+  boostEffect: {fileID: 157185463}
   player: {fileID: 2013107216}
+  playerCam: {fileID: 128188668}
 --- !u!4 &290184957696233891
 Transform:
   m_ObjectHideFlags: 0
