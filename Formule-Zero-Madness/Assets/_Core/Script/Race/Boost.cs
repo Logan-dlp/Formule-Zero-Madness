@@ -1,17 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Boost : MonoBehaviour
 {
+    #region Settings
     [SerializeField] float forceAdd = 1000;
     [SerializeField] float timer = 3;
-    [SerializeField] Drive player;
-    float baseSpeed;
-    public static float CurrentTime;
-    [SerializeField] bool isCurrentboost;
     
+    [SerializeField] bool isCurrentboost;
+
+    [SerializeField] GameObject boostEffect;
+    [SerializeField] Drive player;
+
+    public static float CurrentTime;
+    float baseSpeed;
+    #endregion
+    #region Meths
     void TimeBoost()
     {
         if (CurrentTime <= 0)
@@ -19,13 +22,17 @@ public class Boost : MonoBehaviour
             CurrentTime = 0;
             player.Speed = baseSpeed;
             isCurrentboost = false;
+            boostEffect.SetActive(false);
         }
         else if (CurrentTime != 0 && isCurrentboost == true)
         {
             player.Speed = forceAdd;
             CurrentTime -= Time.deltaTime;
+            boostEffect.SetActive(true);
         }
     }
+    #endregion
+    #region Meths Unity
     private void Start()
     {
         baseSpeed = player.Speed;
@@ -42,4 +49,5 @@ public class Boost : MonoBehaviour
             isCurrentboost = true;
         }
     }
+    #endregion
 }

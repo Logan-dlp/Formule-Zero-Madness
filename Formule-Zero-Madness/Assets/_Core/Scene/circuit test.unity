@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 9966.285, g: 9547.945, b: 10574.367, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -165,8 +165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &50577695
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -209,8 +210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &70307709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -450,7 +452,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -459,9 +461,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 80000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 50
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -491,6 +493,79 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8061535689376967166, guid: 6cf02a740f7cd5f429e457019482695d, type: 3}
+--- !u!1 &157185463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157185464}
+  - component: {fileID: 157185466}
+  - component: {fileID: 157185465}
+  m_Layer: 5
+  m_Name: BoostEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &157185464
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157185463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 760705968}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &157185465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157185463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 86a1f06040cb02940a2d19d09b03478b, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 609b85d122407d644bf22ecf28f281fd, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &157185466
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157185463}
+  m_CullTransparentMesh: 0
 --- !u!64 &168603279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -519,8 +594,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &193226805
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -577,8 +653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &220366581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,8 +670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &228591421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,8 +687,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &244377872
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -653,8 +732,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &266613913
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -717,6 +797,78 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5334404962925722277, guid: 6cf02a740f7cd5f429e457019482695d, type: 3}
+--- !u!1 &363252088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 363252090}
+  - component: {fileID: 363252089}
+  m_Layer: 5
+  m_Name: BoostEffectVideo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!328 &363252089
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363252088}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: adb3df032eb9596419cfad033809494b, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 609b85d122407d644bf22ecf28f281fd, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 0
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 0
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!224 &363252090
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363252088}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 431.3, y: 223.4}
+  m_SizeDelta: {x: 864.19995, y: 447.59998}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &379492045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -787,8 +939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &469864024
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -845,8 +998,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!4 &535996610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808345254161454034, guid: bad682211fa188841962fcf91ff14573,
@@ -881,8 +1035,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &623074010
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -973,8 +1128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &672973333
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1003,8 +1159,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &683613567
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1082,8 +1239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &719218243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1140,8 +1298,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &752942206
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1285,6 +1444,7 @@ RectTransform:
   - {fileID: 1488185264}
   - {fileID: 1636974627}
   - {fileID: 1933769803}
+  - {fileID: 157185464}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1322,8 +1482,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &811790505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,8 +1499,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &819504136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,8 +3161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &866865387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,8 +3178,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &873588107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3031,8 +3195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &882195970
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3061,8 +3226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &891268312
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3091,8 +3257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &911793912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3107,8 +3274,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &917456153
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3137,8 +3305,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &973623000
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3167,8 +3336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &981532934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,8 +3353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1037033994
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3213,8 +3384,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1058776741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,8 +3401,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1081567028
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3259,8 +3432,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1096624911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3289,8 +3463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1123203013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3305,8 +3480,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1144302717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,8 +3579,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1163637827
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3433,8 +3610,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1185014896
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3463,8 +3641,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1195726094
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3493,8 +3672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1197035590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3509,8 +3689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1209682175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3525,8 +3706,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1218750068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7185280872058446716, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -3590,8 +3772,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1256116165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3606,8 +3789,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1303391897
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3636,8 +3820,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1310925115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8738283540392306408, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -3701,8 +3886,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1364012265
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3731,8 +3917,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1411651297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3747,8 +3934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1473605649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3777,8 +3965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1479482278
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3807,8 +3996,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1488185261
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,8 +4107,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1489976467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3933,8 +4124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1515182743
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3963,8 +4155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1541392443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3993,8 +4186,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1543412809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4009,8 +4203,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1554747880
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4039,8 +4234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1555278525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4055,8 +4251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1559348061
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4085,8 +4282,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1580500742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3955072524194071286, guid: 6cf02a740f7cd5f429e457019482695d,
@@ -4164,8 +4362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1583112045
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4194,8 +4393,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1607510915
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4224,8 +4424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1636974626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,8 +4597,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1706628254
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4426,8 +4628,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1730774160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4442,8 +4645,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1766862778
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4472,8 +4676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1770055814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4488,8 +4693,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1786094748
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4518,8 +4724,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1790111345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,8 +4741,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1792271051
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4564,8 +4772,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1820305886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4580,8 +4789,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1854359952
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4610,8 +4820,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1874872932
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4640,8 +4851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &1877254817
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4670,8 +4882,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1894954543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4686,8 +4899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1895828686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4702,8 +4916,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1903637367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,8 +4933,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1904403900
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,8 +5013,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1 &1933769802
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,8 +5110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &1995252739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4909,8 +5127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!1001 &2005453031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5352,7 +5571,7 @@ MonoBehaviour:
   startTime: {fileID: 760705964}
   raceTime: {fileID: 760705969}
   LayerPlayer: 3
-  rb: {fileID: 0}
+  rb: {fileID: 2013107218}
 --- !u!65 &2013107217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5506,8 +5725,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &2071549367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5522,8 +5742,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &2079584987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5538,8 +5759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &2080628684
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5568,8 +5790,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!114 &2083882490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5584,8 +5807,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!64 &2096159083
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5614,8 +5838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceAdd: 700
   timer: 2
-  player: {fileID: 2013107216}
   isCurrentboost: 0
+  boostEffect: {fileID: 0}
+  player: {fileID: 2013107216}
 --- !u!4 &290184957696233891
 Transform:
   m_ObjectHideFlags: 0

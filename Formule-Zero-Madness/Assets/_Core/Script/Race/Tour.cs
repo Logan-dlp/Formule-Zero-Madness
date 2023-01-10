@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Tour : MonoBehaviour
 {
-    int tour = 0;
+    #region Settings
     [SerializeField] Drive player;
     [SerializeField] Text textTour;
+
+    int tour = 0;
+    #endregion
+    #region Meths Unity
     private void Update()
     {
         textTour.text = "Nombre de tour : " + tour.ToString("0");
@@ -19,4 +21,5 @@ public class Tour : MonoBehaviour
             tour++;
         }
     }
+    #endregion
 }
