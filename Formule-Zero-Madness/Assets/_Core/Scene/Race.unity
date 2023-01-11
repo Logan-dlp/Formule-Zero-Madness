@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 6579.7705, g: 6306.2188, b: 6691.953, a: 1}
+  m_IndirectSpecularColor: {r: 6553.661, g: 6300.0723, b: 6759.785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6470,6 +6470,7 @@ GameObject:
   - component: {fileID: 760705964}
   - component: {fileID: 760705969}
   - component: {fileID: 760705970}
+  - component: {fileID: 760705971}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6607,6 +6608,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c88dcc472dc4a343937d532df601cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &760705971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760705963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc46fe30373fd1d459fe2c59bf3c7b12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayScore: {fileID: 0}
 --- !u!114 &808606171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23406,7 +23420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2013107216}
   textTour: {fileID: 1933769804}
-  tour: 0
+  Tour: 0
 --- !u!64 &1580500745
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24918,6 +24932,8 @@ MonoBehaviour:
   sceneGameOver: GameOver
   sceneLoader: {fileID: 760705970}
   LayerPlayer: 3
+  score: {fileID: 760705971}
+  tours: {fileID: 1580500744}
 --- !u!65 &2013107217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24963,7 +24979,6 @@ MonoBehaviour:
   checkpoint1: {fileID: 1870978049669912582}
   checkpoint2: {fileID: 2038091164001192981}
   checkpoint3: {fileID: 485088496792193417}
-  tour: {fileID: 1580500744}
   NumberOfCheckpoint: 0
 --- !u!1 &2038166612
 GameObject:

@@ -27,6 +27,10 @@ public class Drive : MonoBehaviour
     [Header("Player Detection")]
     public float LayerPlayer = 3;
 
+    [Header("Score")]
+    [SerializeField] Score score;
+    [SerializeField] Tours tours;
+
     Rigidbody rb;
     #endregion
     #region Meths
@@ -43,6 +47,7 @@ public class Drive : MonoBehaviour
             Turn();
         }else if(raceTime.MaxTime == 0)
         {
+            score.SetScore(tours.Tour);
             sceneLoader.LoadScene(sceneGameOver);
         }
     }
