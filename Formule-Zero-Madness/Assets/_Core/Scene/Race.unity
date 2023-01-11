@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 6467.6445, g: 6240.6777, b: 6847.539, a: 1}
+  m_IndirectSpecularColor: {r: 6551.232, g: 6299.116, b: 6764.7812, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24923,6 +24923,9 @@ MonoBehaviour:
   raceTime: {fileID: 760705969}
   restartButton: 97
   sceneToRestart: Race
+  menuButton: 101
+  sceneToMenu: ChooseRace
+  sceneGameOver: GameOver
   sceneLoader: {fileID: 760705970}
   LayerPlayer: 3
 --- !u!65 &2013107217

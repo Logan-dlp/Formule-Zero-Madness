@@ -19,6 +19,9 @@ public class Drive : MonoBehaviour
     [Header("Restart")]
     [SerializeField] KeyCode restartButton = KeyCode.A;
     [SerializeField] string sceneToRestart;
+    [SerializeField] KeyCode menuButton = KeyCode.E;
+    [SerializeField] string sceneToMenu;
+    [SerializeField] string sceneGameOver;
     [SerializeField] SceneLoader sceneLoader;
 
     [Header("Player Detection")]
@@ -38,6 +41,9 @@ public class Drive : MonoBehaviour
         {
             Move();
             Turn();
+        }else if(raceTime.MaxTime == 0)
+        {
+            sceneLoader.LoadScene(sceneGameOver);
         }
     }
     void Move()
@@ -56,9 +62,13 @@ public class Drive : MonoBehaviour
     }
     void Restart()
     {
-        if(Input.GetKey(restartButton))
+        if(Input.GetKeyDown(restartButton))
         {
             sceneLoader.LoadScene(sceneToRestart);
+        }
+        if(Input.GetKeyDown(menuButton))
+        {
+            sceneLoader.LoadScene(sceneToMenu);
         }
     }
     void Turn()

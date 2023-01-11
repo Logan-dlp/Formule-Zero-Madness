@@ -13,4 +13,11 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
     }
     #endregion
+    #region Meths Unity
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    #endregion
 }

@@ -37,6 +37,7 @@ public class Boost : MonoBehaviour
     private void Start()
     {
         baseSpeed = player.Speed;
+        boostEffect.SetActive(false);
     }
     private void Update()
     {
