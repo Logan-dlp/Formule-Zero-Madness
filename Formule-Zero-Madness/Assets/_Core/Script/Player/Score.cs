@@ -1,12 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
+    #region Settings
+    [Header("Display")]
     [SerializeField] Text displayScore;
-    int score = 0;
+
+    [HideInInspector] public int score = 0;
+    #endregion
+    #region Meths
     void GetScore()
     {
         score = PlayerPrefs.GetInt("Score", score);
@@ -18,8 +21,11 @@ public class Score : MonoBehaviour
         PlayerPrefs.SetInt("Score", score);
         PlayerPrefs.Save();
     }
+    #endregion
+    #region Meths Unity
     private void Update()
     {
         GetScore();
     }
+    #endregion
 }

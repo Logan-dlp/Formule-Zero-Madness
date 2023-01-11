@@ -47,7 +47,11 @@ public class Drive : MonoBehaviour
             Turn();
         }else if(raceTime.MaxTime == 0)
         {
-            score.SetScore(tours.Tour);
+            
+            if(tours.Tour >= score.score)
+            {
+                score.SetScore(tours.Tour);
+            }
             sceneLoader.LoadScene(sceneGameOver);
         }
     }

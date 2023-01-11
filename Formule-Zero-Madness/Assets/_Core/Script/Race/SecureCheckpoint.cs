@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SecureCheckpoint : MonoBehaviour
 {
     #region Settings
-    [Header("In Race")]
+    [Header("Checkpoint in race")]
     [SerializeField] GameObject ligneArrivee;
     [SerializeField] GameObject checkpoint1;
     [SerializeField] GameObject checkpoint2;

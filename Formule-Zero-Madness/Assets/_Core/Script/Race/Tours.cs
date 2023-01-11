@@ -4,10 +4,12 @@ using UnityEngine.UI;
 public class Tours : MonoBehaviour
 {
     #region Settings
+    [Header("Player Detection")]
     [SerializeField] Drive player;
+    [Header("Display")]
     [SerializeField] Text textTour;
 
-    public int Tour = 0;
+    [HideInInspector] public int Tour = 0;
     #endregion
     #region Meths Unity
     private void Update()
