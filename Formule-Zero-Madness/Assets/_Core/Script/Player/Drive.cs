@@ -3,19 +3,28 @@ using UnityEngine;
 public class Drive : MonoBehaviour
 {
     #region Settings
+    [Header("Physics")]
     public float Speed;
     [SerializeField] float turnSpeed;
     [SerializeField] float gravity;
 
-    [SerializeField, Space] KeyCode accelerate = KeyCode.Z;
+    [Header("Move")]
+    [SerializeField] KeyCode accelerate = KeyCode.Z;
     [SerializeField] KeyCode brake = KeyCode.S;
 
-    [SerializeField, Space] StartTime startTime;
+    [Header("Timer")]
+    [SerializeField] StartTime startTime;
     [SerializeField] RaceTime raceTime;
 
-    [Space] public float LayerPlayer = 3;
+    [Header("Restart")]
+    [SerializeField] KeyCode restartButton = KeyCode.A;
+    [SerializeField] string sceneToRestart;
+    [SerializeField] SceneLoader sceneLoader;
 
-    public Rigidbody rb;
+    [Header("Player Detection")]
+    public float LayerPlayer = 3;
+
+    Rigidbody rb;
     #endregion
     #region Meths
     void Fall()
@@ -45,6 +54,13 @@ public class Drive : MonoBehaviour
         _localVelocity.x = 0;
         rb.velocity = transform.TransformDirection(_localVelocity);
     }
+    void Restart()
+    {
+        if(Input.GetKey(restartButton))
+        {
+            sceneLoader.LoadScene(sceneToRestart);
+        }
+    }
     void Turn()
     {
         float _rotation = Input.GetAxis("Horizontal") * turnSpeed;
@@ -57,6 +73,7 @@ public class Drive : MonoBehaviour
     {
         InStartWait();
         Fall();
+        Restart();
     }
     private void Start()
     {

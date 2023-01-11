@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 9966.285, g: 9547.945, b: 10574.242, a: 1}
+  m_IndirectSpecularColor: {r: 9967.941, g: 9550.484, b: 10577.578, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6151,6 +6151,7 @@ GameObject:
   - component: {fileID: 760705965}
   - component: {fileID: 760705964}
   - component: {fileID: 760705969}
+  - component: {fileID: 760705970}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6276,6 +6277,18 @@ MonoBehaviour:
   timerText: {fileID: 1488185262}
   startTime: {fileID: 760705964}
   MaxTime: 120
+--- !u!114 &760705970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760705963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88dcc472dc4a343937d532df601cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &808606171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28473,8 +28486,10 @@ MonoBehaviour:
   brake: 115
   startTime: {fileID: 760705964}
   raceTime: {fileID: 760705969}
+  restartButton: 97
+  sceneToRestart: Race
+  sceneLoader: {fileID: 760705970}
   LayerPlayer: 3
-  rb: {fileID: 2013107218}
 --- !u!65 &2013107217
 BoxCollider:
   m_ObjectHideFlags: 0
