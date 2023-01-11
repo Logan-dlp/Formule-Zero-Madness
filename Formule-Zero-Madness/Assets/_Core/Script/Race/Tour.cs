@@ -7,7 +7,7 @@ public class Tour : MonoBehaviour
     [SerializeField] Drive player;
     [SerializeField] Text textTour;
 
-    int tour = 0;
+    public int tour = 0;
     #endregion
     #region Meths Unity
     private void Update()

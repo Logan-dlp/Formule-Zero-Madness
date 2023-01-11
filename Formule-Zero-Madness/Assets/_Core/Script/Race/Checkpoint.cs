@@ -6,6 +6,7 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] float addTime = 30;
     [SerializeField] Drive player;
     [SerializeField] RaceTime raceTime;
+    [SerializeField] SecureCheckpoint checkpoint;
     #endregion
     #region Meths Unity
     private void OnTriggerEnter(Collider _collider)
@@ -13,6 +14,7 @@ public class Checkpoint : MonoBehaviour
         if(_collider.gameObject.layer == player.LayerPlayer)
         {
             raceTime.MaxTime += addTime;
+            checkpoint.NumberOfCheckpoint++;
         }
     }
     #endregion
