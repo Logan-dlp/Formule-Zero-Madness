@@ -81,11 +81,11 @@ public class Drive : MonoBehaviour
     }
     void Restart()
     {
-        if(Input.GetKeyDown(restartButton))
+        if(Input.GetKeyUp(restartButton))
         {
             sceneLoader.LoadScene(sceneToRestart);
         }
-        if(Input.GetKeyDown(menuButton))
+        if(Input.GetKeyUp(menuButton))
         {
             sceneLoader.LoadScene(sceneToMenu);
         }
