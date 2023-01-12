@@ -31,6 +31,9 @@ public class Drive : MonoBehaviour
     [SerializeField] Score score;
     [SerializeField] Tours tours;
 
+    [Header("Sound")]
+    public AudioSource BoostSound;
+
     Rigidbody rb;
     #endregion
     #region Meths

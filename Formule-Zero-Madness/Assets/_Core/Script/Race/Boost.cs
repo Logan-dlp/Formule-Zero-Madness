@@ -49,6 +49,7 @@ public class Boost : MonoBehaviour
         {
             CurrentTime = timer;
             isCurrentboost = true;
+            player.BoostSound.Play(0);
         }
     }
     #endregion
