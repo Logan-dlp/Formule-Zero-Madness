@@ -33,6 +33,7 @@ public class Drive : MonoBehaviour
 
     [Header("Sound")]
     public AudioSource BoostSound;
+    [SerializeField] GameObject playerSound;
 
     Rigidbody rb;
     #endregion
@@ -63,10 +64,16 @@ public class Drive : MonoBehaviour
         if (Input.GetKey(accelerate))
         {
             rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * Speed);
+            playerSound.SetActive(true);
         }
         else if (Input.GetKey(brake))
         {
             rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * -Speed);
+            playerSound.SetActive(true);
+        }
+        else
+        {
+            playerSound.SetActive(false);
         }
         Vector3 _localVelocity = transform.InverseTransformDirection(rb.velocity);
         _localVelocity.x = 0;
@@ -103,6 +110,8 @@ public class Drive : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        playerSound.SetActive(false);
     }
     #endregion
 }
