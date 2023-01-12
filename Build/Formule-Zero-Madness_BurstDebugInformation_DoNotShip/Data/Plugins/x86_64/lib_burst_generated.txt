@@ -1,13 +1,12 @@
-Library: lib_burst_generated
+Library: C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
---backend=burst-llvm-11
+--backend=burst-llvm-14
 --target=X64_SSE2
 --global-safety-checks-setting=Off
+--meta-data-generation=False
 --dump=Function
 --float-precision=Standard
---format=Coff
---disable-warnings=BC1370
---compilation-defines=UNITY_2021_3_12
+--compilation-defines=UNITY_2021_3_16
 --compilation-defines=UNITY_2021_3
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER
@@ -34,12 +33,6 @@ Library: lib_burst_generated
 --compilation-defines=UNITY_2021_3_OR_NEWER
 --compilation-defines=PLATFORM_ARCH_64
 --compilation-defines=UNITY_64
---compilation-defines=USE_SEARCH_ENGINE_API
---compilation-defines=USE_SEARCH_TABLE
---compilation-defines=USE_SEARCH_MODULE
---compilation-defines=USE_PROPERTY_DATABASE
---compilation-defines=USE_SEARCH_EXTENSION_API
---compilation-defines=SCENE_TEMPLATE_MODULE
 --compilation-defines=ENABLE_AR
 --compilation-defines=ENABLE_AUDIO
 --compilation-defines=ENABLE_CACHING
@@ -114,6 +107,7 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
+--compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
@@ -138,53 +132,27 @@ Library: lib_burst_generated
 --compilation-defines=VFX_HAS_UI
 --compilation-defines=VFX_HAS_PHYSICS
 --compilation-defines=VFX_HAS_AUDIO
---linker-options=PdbAltPath="Formule-Zero-Madness_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Formule-Zero-Madness_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
+--temp-folder=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\Burst
 --output=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Telemetry.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Flow.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Core.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.Internal.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Burst.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualEffectGraph.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Scheduler.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Device.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Analytics.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Registration.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll
---assembly-folder=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
+--pdb-search-paths=Temp/ManagedSymbols/
+
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
---method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoSetCSRTrampoline(System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--da352d92cabf024fc9986011d52a4537
---method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoGetCSRTrampoline()--89425a97f3f500fa810ad03f0c382542
 --method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDGpuLightsBuilder+CreateGpuLightDataJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDGpuLightsBuilder+CreateGpuLightDataJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--a4c2ec930c204a2778e62382b0ccde22
---method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--5d46967a31c03289f63ba4d1f9ba03ca
+--method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoSetCSRTrampoline(System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--da352d92cabf024fc9986011d52a4537
 --method=UnityEngine.Jobs.IJobParallelForTransformExtensions+TransformParallelForLoopStruct`1[[UnityEngine.Rendering.HighDefinition.DecalSystem+UpdateJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.DecalSystem+UpdateJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--205ecd15c84b7379b0ca7cafa866a8fb
+--method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--5d46967a31c03289f63ba4d1f9ba03ca
+--method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoGetCSRTrampoline()--89425a97f3f500fa810ad03f0c382542
 --platform=Windows
---backend=burst-llvm-11
+--backend=burst-llvm-14
 --target=AVX2
 --global-safety-checks-setting=Off
+--meta-data-generation=False
 --dump=Function
 --float-precision=Standard
---format=Coff
---disable-warnings=BC1370
---compilation-defines=UNITY_2021_3_12
+--compilation-defines=UNITY_2021_3_16
 --compilation-defines=UNITY_2021_3
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER
@@ -211,12 +179,6 @@ Library: lib_burst_generated
 --compilation-defines=UNITY_2021_3_OR_NEWER
 --compilation-defines=PLATFORM_ARCH_64
 --compilation-defines=UNITY_64
---compilation-defines=USE_SEARCH_ENGINE_API
---compilation-defines=USE_SEARCH_TABLE
---compilation-defines=USE_SEARCH_MODULE
---compilation-defines=USE_PROPERTY_DATABASE
---compilation-defines=USE_SEARCH_EXTENSION_API
---compilation-defines=SCENE_TEMPLATE_MODULE
 --compilation-defines=ENABLE_AR
 --compilation-defines=ENABLE_AUDIO
 --compilation-defines=ENABLE_CACHING
@@ -291,6 +253,7 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
+--compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
@@ -315,42 +278,17 @@ Library: lib_burst_generated
 --compilation-defines=VFX_HAS_UI
 --compilation-defines=VFX_HAS_PHYSICS
 --compilation-defines=VFX_HAS_AUDIO
---linker-options=PdbAltPath="Formule-Zero-Madness_Data/Plugins/x86_64"
+--linker-options=PdbAltPath="Formule-Zero-Madness_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
+--temp-folder=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\Burst
 --output=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Telemetry.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.State.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Flow.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualScripting.Core.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.Internal.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.TextMeshPro.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Burst.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Environments.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Internal.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Timeline.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Mathematics.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.VisualEffectGraph.Runtime.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Scheduler.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Device.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Analytics.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.Services.Core.Registration.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
---root-assembly=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll
---assembly-folder=C:\Users\pix59\Documents\Unity\Formule-Zero-Madness\Formule-Zero-Madness\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
+--pdb-search-paths=Temp/ManagedSymbols/
+
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
---method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoSetCSRTrampoline(System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--da352d92cabf024fc9986011d52a4537
---method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoGetCSRTrampoline()--89425a97f3f500fa810ad03f0c382542
 --method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDGpuLightsBuilder+CreateGpuLightDataJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDGpuLightsBuilder+CreateGpuLightDataJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--a4c2ec930c204a2778e62382b0ccde22
---method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--5d46967a31c03289f63ba4d1f9ba03ca
+--method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoSetCSRTrampoline(System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--da352d92cabf024fc9986011d52a4537
 --method=UnityEngine.Jobs.IJobParallelForTransformExtensions+TransformParallelForLoopStruct`1[[UnityEngine.Rendering.HighDefinition.DecalSystem+UpdateJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.DecalSystem+UpdateJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--205ecd15c84b7379b0ca7cafa866a8fb
+--method=Unity.Jobs.IJobParallelForExtensions+ParallelForJobStruct`1[[UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.HighDefinition.HDProcessedVisibleLightsBuilder+ProcessVisibleLightJob&, Unity.RenderPipelines.HighDefinition.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--5d46967a31c03289f63ba4d1f9ba03ca
+--method=Unity.Burst.Intrinsics.X86, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::DoGetCSRTrampoline()--89425a97f3f500fa810ad03f0c382542
 
