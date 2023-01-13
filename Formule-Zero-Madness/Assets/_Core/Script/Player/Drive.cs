@@ -7,6 +7,8 @@ public class Drive : MonoBehaviour
     public float Speed;
     [SerializeField] float turnSpeed;
     [SerializeField] float gravity;
+    [SerializeField] CharacterController controller;
+    [SerializeField] Vector3 moveDirection = Vector3.zero;
 
     [Header("Move")]
     [SerializeField] KeyCode accelerate = KeyCode.Z;
@@ -40,8 +42,9 @@ public class Drive : MonoBehaviour
     #region Meths
     void Fall()
     {
-        Physics.Raycast(transform.position, -transform.up, out RaycastHit _hitInfo );
-        rb.AddForce(-_hitInfo.normal * gravity);
+        // Physics.Raycast(transform.position, -transform.up, out RaycastHit _hitInfo );
+        // rb.AddForce(-_hitInfo.normal * gravity);
+        moveDirection.y -= gravity * Time.deltaTime;
     }
     void InStartWait()
     {
@@ -63,17 +66,24 @@ public class Drive : MonoBehaviour
     {
         if (Input.GetKey(accelerate))
         {
-            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * Speed);
+            // rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * Speed);
+            moveDirection = new Vector3(Vector3.forward.x, 0, Vector3.forward.z);
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= Speed;
             playerSound.SetActive(true);
         }
         else if (Input.GetKey(brake))
         {
-            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * -Speed);
+            // rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * -Speed);
+            moveDirection = new Vector3(Vector3.forward.x, 0, Vector3.forward.z);
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= -Speed;
             playerSound.SetActive(true);
         }
         else
         {
             playerSound.SetActive(false);
+            moveDirection = Vector3.zero;
         }
         Vector3 _localVelocity = transform.InverseTransformDirection(rb.velocity);
         _localVelocity.x = 0;
@@ -98,15 +108,17 @@ public class Drive : MonoBehaviour
     }
     #endregion
     #region Meths Unity
-    private void FixedUpdate()
+    private void Update()
     {
         InStartWait();
         Fall();
         Restart();
+        controller.Move(moveDirection * Time.deltaTime);
     }
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
